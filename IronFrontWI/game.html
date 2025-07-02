@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="mainpage.css">
+        </head>
+        <body>
+            <div class="sidenav">
+                <a href="index.html">
+                    <button>
+                        <h1>Home</h1>
+                    </button>
+                </a>
+                <a href="game.html">
+                    <button>
+                        <h1>Games</h1>
+                    </button>
+                </a>
+                <a href="reading.html">
+                    <button>
+                        <h1>Reading</h1>
+                    </button>
+                </a>
+            </div>
+            <div class="rightsidenav">
+                <!--Page Specific Information-->
+                <h1 id="score">Score<br>0</h1>
+                <h1 id="time">Timer<br>0</h1>
+            </div>
+            <div id="game">
+                <img src="game/swastika.png" id="placeholderimage" width="400px" height="400">
+                <br>
+                <script src="game.js"></script>
+                <button style="background-color: green;" onclick="clickedNotFascist()">
+                    <h1>Not Fascist</h1>
+                </button>
+                <button style="background-color: red;" onclick="clickedFascist()">
+                    <h1>⠀⠀Fascist⠀⠀</h1>
+                </button>
+            </div>
+        </body>
+    </html>
